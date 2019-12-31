@@ -133,7 +133,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 if (mode == RGB_MATRIX_CUSTOM_SAMURAI) {
                     rgblight_mode(previous_mode);
                 } else {
-                    previous_mode = rgblight_get_mode();
+                    previous_mode = mode;
                     rgblight_mode(RGB_MATRIX_CUSTOM_SAMURAI);
                 }
             }
